@@ -13,7 +13,7 @@ public class SinglyLinkedList {
 	}
 
 	public void addFirst(E value) {
-		this.head = new Node<E>(value, head);
+		this.head = new Node<E>(value, this.head);
 		this.count++;
 	}
 
