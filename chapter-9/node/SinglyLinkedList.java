@@ -1,7 +1,7 @@
 
 public class SinglyLinkedList {
 	protected int count;
-	protect Node<E> head;
+	protected Node<E> head;
 
 	public SinglyLinkedList() {
 		this.head = null;
@@ -48,7 +48,7 @@ public class SinglyLinkedList {
 
 		while (cursor.getNext() != null) {
 			previous = cursor;
-			cursor = cursor.next();
+			cursor = cursor.getNext();
 		}
 
 		if (previous == null) {
@@ -108,7 +108,7 @@ public class SinglyLinkedList {
 
 			while (index > 0) {
 				previous = cursor;
-				cursor - cursor.getNext();
+				cursor = cursor.getNext();
 				index--;
 			}
 
@@ -128,7 +128,7 @@ public class SinglyLinkedList {
 			return this.removeLast();
 		} else {
 			Node<E> previous = null;
-			Node<E> cursor= this.head;
+			Node<E> cursor = this.head;
 
 			while (index > 0) {
 				previous = cursor;

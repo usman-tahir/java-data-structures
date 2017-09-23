@@ -15,11 +15,6 @@ public class Node<E> {
 		this(data, null);
 	}
 
-	public Node<E> next() {
-		// post: returns a reference to the next value in the list
-		return this.next;
-	}
-
 	public E getData() {
 		// post: returns the value associated with this element
 		return this.data;
